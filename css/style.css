@@ -51,3 +51,26 @@ ul,
 ol {
   list-style: none;
 }
+
+/* ====================== */
+/* DEBUG */
+.debug {
+  main {
+    outline: 2px dotted blue;
+  }
+
+  section.pricing {
+    outline: 2px dashed red;
+  }
+
+  .intro,
+  .cards {
+    outline: 2px solid green;
+  }
+
+  .cards .card,
+  .intro .heading,
+  .intro .switches {
+    outline: 2px solid magenta;
+  }
+}
