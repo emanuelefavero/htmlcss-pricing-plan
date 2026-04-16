@@ -2,7 +2,7 @@
   /* Colors */
   --background: oklch(100% 0 0);
   --foreground: oklch(0% 0 0);
-  --foreground-muted: oklch(61% 0 16);
+  --foreground-muted: oklch(60% 0 0);
   --primary: oklch(50% 0.3 285);
   --secondary: oklch(92% 0 271);
 

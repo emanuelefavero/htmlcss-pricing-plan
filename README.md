@@ -1,5 +1,7 @@
 # HTML/CSS Pricing Plan
 
+> Tip: Code decisions are explained in the [Implementation Notes](#implementation-notes)
+
 Static responsive pricing plan page for a web development course exercise.
 
 ## Exercise Goal
@@ -32,6 +34,10 @@ Match the provided reference layouts using HTML and CSS, with a focus on respons
 - Desktop layout: pricing cards arranged in three columns when space allows
 - Bonus: on tablet, make the third card full width
 - Bonus: when a card is full width, arrange its feature list in two columns
+
+## Implementation Notes
+
+- Considered creating switch toggles with html/css for interactivity, but decided to use Bootstrap icons for simplicity, as this exercise focuses on layout and responsiveness rather than interactivity
 
 &nbsp;
 
