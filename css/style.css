@@ -1,0 +1,48 @@
+:root {
+  /* Colors */
+  --background: oklch(100% 0 0);
+  --foreground: oklch(0% 0 0);
+  --foreground-muted: oklch(61% 0 16);
+  --primary: oklch(50% 0.3 285);
+  --secondary: oklch(92% 0 271);
+
+  /* Font */
+  --font-sans: sans-serif;
+}
+
+/* BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--foreground);
+  background-color: var(--background);
+}
+
+button {
+  user-select: none;
+  border-radius: 0;
+  text-align: inherit;
+  background: none;
+  box-shadow: none;
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  color: inherit;
+  font: inherit;
+  touch-action: manipulation;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
