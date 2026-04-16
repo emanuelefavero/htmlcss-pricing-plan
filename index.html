@@ -22,26 +22,69 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
   </head>
-  <body>
-    <main class="page">
-      <section class="intro">
-        <div class="heading">
-          <h1>Our Pricing Plan</h1>
-          <p>
-            We are an industry-leading company that values honesty, integrity
-            and efficiency, building quality products.
-          </p>
+  <body class="debug">
+    <main>
+      <section class="pricing">
+        <!-- INTRO -->
+        <div class="intro">
+          <div class="heading">
+            <h1>Our Pricing Plan</h1>
+            <p>
+              We are an industry-leading company that values honesty, integrity
+              and efficiency, building quality products.
+            </p>
+          </div>
+
+          <!-- Switches -->
+          <div class="switches">
+            <button class="switch active">
+              <span>Monthly</span>
+              <i class="bi bi-toggle-on"></i>
+            </button>
+            <button class="switch">
+              <span>Yearly</span>
+              <i class="bi bi-toggle-off"></i>
+            </button>
+          </div>
         </div>
-        <div class="switches">
-          <button class="switch active">
-            <span>Monthly</span>
-            <i class="bi bi-toggle-on"></i>
-          </button>
-          <button class="switch">
-            <span>Yearly</span>
-            <i class="bi bi-toggle-off"></i>
-          </button>
-        </div>
+
+        <!-- CARDS -->
+        <ul class="cards">
+          <!-- CARD - Basic -->
+          <li class="card">
+            <!-- Card Heading -->
+            <div class="heading">
+              <h2>Basic</h2>
+              <p>Most Popular</p>
+            </div>
+
+            <!-- Card Price -->
+            <div class="price">
+              <span class="currency">$</span>
+              <span class="amount">2.45</span>
+              <span class="period">/mo</span>
+            </div>
+
+            <!-- Card Discount -->
+            <div class="discount">
+              Yearly
+              <span class="badge">15% Off</span>
+            </div>
+
+            <button class="btn btn-primary">Choose plan</button>
+
+            <!-- Card Features -->
+            <ul class="features">
+              <!-- TODO check if the icon is correct, if not use check2 or check-lg -->
+              <li><i class="bi bi-check"></i> Unlimited Products</li>
+              <li><i class="bi bi-check"></i> Custom Permissions</li>
+              <li><i class="bi bi-check"></i> Custom Infrastructure</li>
+              <li><i class="bi bi-x"></i> Custom Design &amp; Features</li>
+              <li><i class="bi bi-x"></i> Unlimited Updates</li>
+              <li><i class="bi bi-x"></i> Unlimited Infrastructure</li>
+            </ul>
+          </li>
+        </ul>
       </section>
     </main>
   </body>
