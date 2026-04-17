@@ -96,8 +96,13 @@ main {
 .card {
   background-color: var(--background);
   color: var(--foreground);
+  padding: 2.2rem 2.25rem 2.7rem 2.25rem;
   border-radius: 1rem;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+
+  > :not(:first-child) {
+    margin-top: 1.25rem;
+  }
 
   .heading {
     h2 {
