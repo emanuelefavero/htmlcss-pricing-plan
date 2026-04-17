@@ -116,6 +116,8 @@ main {
   }
 
   .price {
+    text-align: center;
+
     .currency {
       font-size: 1.1rem;
       font-weight: bold;
@@ -133,7 +135,13 @@ main {
   }
 
   .discount {
+    margin-top: 1.5rem;
+    text-align: center;
     font-size: 0.8rem;
+  }
+
+  .btn {
+    margin-top: 1.6rem;
   }
 
   /* FEATURED CARD (Professional Card) */
@@ -195,7 +203,7 @@ main {
 
     i {
       font-size: 1.5rem;
-      line-height: 1.4;
+      line-height: 1.6;
     }
   }
 }
