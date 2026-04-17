@@ -110,6 +110,12 @@ main {
   @media (min-width: 900px) {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  @media (640px <= width < 900px) {
+    > .card:last-child:nth-child(odd) {
+      grid-column: 1 / -1;
+    }
+  }
 }
 
 .card {
@@ -118,18 +124,6 @@ main {
   padding: 2.2rem 2.25rem 2.7rem 2.25rem;
   border-radius: 1rem;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-
-  @media (min-width: 640px) {
-    &:last-child {
-      grid-column: span 2;
-    }
-  }
-
-  @media (min-width: 900px) {
-    &:last-child {
-      grid-column: span 1;
-    }
-  }
 
   > :not(:first-child) {
     margin-top: 1.25rem;
