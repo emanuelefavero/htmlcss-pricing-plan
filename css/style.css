@@ -10,6 +10,10 @@
 
   /* Font */
   --font-sans: sans-serif;
+
+  /* Layout */
+  --content-width: 900px;
+  --page-padding-x: 1.25rem;
 }
 
 /* BASE */
@@ -28,6 +32,7 @@ body {
   font-family: var(--font-sans);
   color: var(--foreground);
   background-color: var(--background);
+  min-width: calc(var(--content-width) / 3);
 }
 
 button {
@@ -56,9 +61,6 @@ ol {
 
 /* LAYOUT */
 main {
-  --content-width: 900px;
-  --page-padding-x: 1.25rem;
-
   width: 100%;
   max-width: calc(var(--content-width) + var(--page-padding-x) * 2);
   margin-inline: auto;
