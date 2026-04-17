@@ -52,6 +52,17 @@ ol {
   list-style: none;
 }
 
+/* LAYOUT */
+main {
+  --content-width: 900px;
+  --page-padding-x: 1.25rem;
+
+  width: 100%;
+  max-width: calc(var(--content-width) + var(--page-padding-x) * 2);
+  margin-inline: auto;
+  padding: 2rem var(--page-padding-x);
+}
+
 /* ====================== */
 /* DEBUG */
 .debug {
