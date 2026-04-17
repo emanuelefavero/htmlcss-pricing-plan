@@ -38,6 +38,10 @@ Match the provided reference layouts using HTML and CSS, with a focus on respons
 ## Implementation Notes
 
 - Considered creating switch toggles with html/css for interactivity, but decided to use Bootstrap icons for simplicity, as this exercise focuses on layout and responsiveness rather than interactivity
+- Used container queries to switch the features list to two columns when the card has enough width, as this allows for a more modular and responsive design without relying on media queries that target specific breakpoints
+- Used `flex` with `calc()` and css custom properties to create the responsive card layout, as this allows for a more fluid and adaptable design, no matter the amount of cards.
+- Used css custom properties for colors and other values
+- Used component classes and css nesting to scope styles to specific components and avoid unintended side effects, as this promotes better maintainability and readability of the code in a small project like this one.
 
 &nbsp;
 
