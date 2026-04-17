@@ -72,6 +72,14 @@ main {
 
 /* COMPONENTS */
 .intro {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.5rem;
+
   .heading {
     h1 {
       font-size: 2.25rem;
@@ -83,19 +91,30 @@ main {
       font-size: 0.8rem;
     }
   }
-}
 
-.switch {
-  color: var(--foreground-muted);
-  font-size: 0.8rem;
-  border-radius: 0.5rem;
+  .switches {
+    margin-left: auto;
+    display: flex;
+    gap: 0.875rem;
 
-  i {
-    font-size: 1.5rem;
-  }
+    .switch {
+      color: var(--foreground-muted);
+      font-size: 0.8rem;
+      border-radius: 0.5rem;
 
-  &.active i {
-    color: var(--foreground);
+      /* Center icon and text vertically */
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+
+      i {
+        font-size: 1.5rem;
+      }
+
+      &.active i {
+        color: var(--foreground);
+      }
+    }
   }
 }
 
