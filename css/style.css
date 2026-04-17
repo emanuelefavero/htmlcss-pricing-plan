@@ -141,6 +141,7 @@ main {
 }
 
 .card {
+  container-type: inline-size; /* Enable container queries for this component */
   background-color: var(--background);
   color: var(--foreground);
   padding: 2.2rem 2.25rem 2.7rem 2.25rem;
@@ -245,6 +246,8 @@ main {
 }
 
 .features {
+  display: grid;
+  gap: 0.25rem 2rem;
   font-size: 0.875rem;
 
   li {
@@ -256,6 +259,13 @@ main {
       font-size: 1.5rem;
       line-height: 1.6;
     }
+  }
+
+  /* Arrange in two columns when card container has enough width */
+  /* NOTE: Remember to set `container-type: inline-size;` on the card element */
+  /* @see https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/container-type */
+  @container (min-width: 440px) {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
