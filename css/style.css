@@ -100,21 +100,24 @@ main {
 }
 
 .cards {
-  display: grid;
-  gap: 1.5rem;
+  --gap: 1.5rem;
+  --columns: 1;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+
+  > .card {
+    /* Subtract the total row gaps, then divide the remaining space by the number of columns */
+    flex: 1 1 calc((100% - (var(--columns) - 1) * var(--gap)) / var(--columns));
+  }
 
   @media (min-width: 640px) {
-    grid-template-columns: repeat(2, 1fr);
+    --columns: 2;
   }
 
   @media (min-width: 900px) {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  @media (640px <= width < 900px) {
-    > .card:last-child:nth-child(odd) {
-      grid-column: 1 / -1;
-    }
+    --columns: 3;
   }
 }
 
