@@ -4,6 +4,10 @@
 
 Static responsive pricing plan page for a web development course exercise.
 
+## Live Demo
+
+[**View on GitHub Pages &nbsp; 🌐**](https://emanuelefavero.github.io/htmlcss-pricing-plan/)
+
 ## Exercise Goal
 
 Match the provided reference layouts using HTML and CSS, with a focus on responsive card layout behavior.
