@@ -172,8 +172,15 @@ main {
 .features {
   font-size: 0.875rem;
 
-  i {
-    font-size: 1.5rem;
+  li {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+
+    i {
+      font-size: 1.5rem;
+      line-height: 1.4;
+    }
   }
 }
 
