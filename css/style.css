@@ -64,6 +64,12 @@ main {
   padding: 2rem var(--page-padding-x);
 }
 
+.pricing {
+  > :not(:first-child) {
+    margin-top: 3.125rem;
+  }
+}
+
 /* COMPONENTS */
 .intro {
   .heading {
@@ -93,12 +99,37 @@ main {
   }
 }
 
+.cards {
+  display: grid;
+  gap: 1.5rem;
+
+  @media (min-width: 640px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 900px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 .card {
   background-color: var(--background);
   color: var(--foreground);
   padding: 2.2rem 2.25rem 2.7rem 2.25rem;
   border-radius: 1rem;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+
+  @media (min-width: 640px) {
+    &:last-child {
+      grid-column: span 2;
+    }
+  }
+
+  @media (min-width: 900px) {
+    &:last-child {
+      grid-column: span 1;
+    }
+  }
 
   > :not(:first-child) {
     margin-top: 1.25rem;
