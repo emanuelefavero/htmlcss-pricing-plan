@@ -74,6 +74,7 @@ main {
 }
 
 /* COMPONENTS */
+/* Intro */
 .intro {
   width: 100%;
   display: flex;
@@ -120,6 +121,7 @@ main {
   }
 }
 
+/* Cards */
 .cards {
   --gap: 1.5rem;
   --columns: 1;
@@ -142,6 +144,7 @@ main {
   }
 }
 
+/* Card */
 .card {
   container-type: inline-size; /* Enable container queries for this component */
   background-color: var(--background);
@@ -216,6 +219,7 @@ main {
   }
 }
 
+/* Badge */
 .badge {
   background-color: var(--secondary);
   color: var(--foreground);
@@ -223,6 +227,7 @@ main {
   border-radius: 0.35rem;
 }
 
+/* Buttons */
 .btn {
   display: inline-block;
   width: 100%;
@@ -247,6 +252,7 @@ main {
   }
 }
 
+/* Features */
 .features {
   display: grid;
   gap: 0.25rem 2rem;
