@@ -4,7 +4,7 @@
   --foreground: oklch(0% 0 0);
   --foreground-muted: oklch(55% 0.02 264);
   --primary: oklch(50% 0.3 285);
-  --focus: oklch(50.384% 0.29377 285.384 / 0.4);
+  --focus: oklch(50% 0.3 285 / 0.4);
   --secondary: oklch(92% 0 271);
 
   /* Font */
@@ -74,8 +74,7 @@ main {
 .intro {
   width: 100%;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: space-between;
   align-items: flex-start;
   gap: 1.5rem;
@@ -131,11 +130,11 @@ main {
     flex: 1 1 calc((100% - (var(--columns) - 1) * var(--gap)) / var(--columns));
   }
 
-  @media (min-width: 640px) {
+  @media (width >= 640px) {
     --columns: 2;
   }
 
-  @media (min-width: 900px) {
+  @media (width >= 900px) {
     --columns: 3;
   }
 }
@@ -144,9 +143,9 @@ main {
   container-type: inline-size; /* Enable container queries for this component */
   background-color: var(--background);
   color: var(--foreground);
-  padding: 2.2rem 2.25rem 2.7rem 2.25rem;
+  padding: 2.2rem 2.25rem 2.7rem;
   border-radius: 1rem;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 16px rgb(0 0 0 / 0.2);
 
   > :not(:first-child) {
     margin-top: 1.25rem;
@@ -261,15 +260,18 @@ main {
     }
   }
 
-  /* Arrange in two columns when card container has enough width */
-  /* NOTE: Remember to set `container-type: inline-size;` on the card element */
-  /* @see https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/container-type */
+  /* 
+  Arrange in two columns when card container has enough width
+  NOTE: Remember to set `container-type: inline-size;` on the card element
+  @see https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/container-type 
+  */
   @container (min-width: 440px) {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 /* ====================== */
+
 /* DEBUG */
 .debug {
   main {
