@@ -77,12 +77,14 @@ main {
 
 /* Intro */
 .intro {
-  width: 100%;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: flex-start;
+  flex-direction: column;
   gap: 1.5rem;
+
+  @media (width >= 640px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
   .heading {
     h1 {
@@ -97,14 +99,13 @@ main {
   }
 
   .switches {
-    margin-inline: auto;
+    align-self: center; /* center switches on mobile */
     display: flex;
     gap: 0.875rem;
 
-    /* Position switch on the right on > tablet */
+    /* Reset alignment on >= tablet/desktop */
     @media (width >= 640px) {
-      margin-left: auto;
-      margin-right: 0;
+      align-self: auto;
     }
 
     .switch {
