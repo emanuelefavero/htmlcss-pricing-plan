@@ -42,13 +42,15 @@ Match the provided reference layouts using HTML and CSS, with a focus on respons
 
 ## Implementation Notes
 
+- Made sure the max content width is `900px` and calculated horizontal padding + content width for the main container.
+- Chosen `640px` as the breakpoint for mobile/tablet and `900px` for tablet/desktop, as these are common and worked well with the layout.
 - Considered creating switch toggles with html/css for interactivity, but decided to use Bootstrap icons for simplicity, as this exercise focuses on layout and responsiveness rather than interactivity
 - Used container queries to switch the features list to two columns when the card has enough width, as this allows for a more modular and responsive design without relying on media queries that target specific breakpoints
 - Used `flex` with `calc()` and css custom properties to create the responsive card layout, as this allows for a more fluid and adaptable design, no matter the amount of cards.
 - Centered the switches with `align-self: center` on mobile, and used media queries to reset the behavior on larger screens.
 - Ordered the second card (Professional) first on mobile using the `order` property and media queries.
 - Used css custom properties for colors and other values
-- Used component classes and css nesting to scope styles to specific components and avoid unintended side effects, as this promotes better maintainability and readability of the code in a small project like this one.
+- Used component classes and css nesting to scope styles to specific components and avoid unintended side effects.
 
 &nbsp;
 
