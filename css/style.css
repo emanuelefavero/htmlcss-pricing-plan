@@ -138,6 +138,9 @@ main {
   flex-wrap: wrap;
   gap: var(--gap);
 
+  /* ==============================
+  Layout: Responsive columns system 
+  ============================== */
   > .card {
     /* Subtract the total row gaps, then divide the remaining space by the number of columns */
     flex: 1 1 calc((100% - (var(--columns) - 1) * var(--gap)) / var(--columns));
@@ -149,6 +152,17 @@ main {
 
   @media (width >= 900px) {
     --columns: 3;
+  }
+
+  /* ============================================= 
+  Feature: Highlight "Professional" card on mobile 
+  ============================================= */
+  > .card:nth-child(2) {
+    order: -1;
+
+    @media (width >= 640px) {
+      order: 0;
+    }
   }
 }
 
