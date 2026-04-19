@@ -60,6 +60,7 @@ ol {
 }
 
 /* UTILITIES */
+
 /* Screen reader only */
 .sr-only {
   position: absolute;
@@ -68,7 +69,7 @@ ol {
   padding: 0;
   margin: -1px;
   overflow: hidden;
-  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
   white-space: nowrap;
   border: 0;
 }
@@ -152,11 +153,9 @@ main {
   flex-wrap: wrap;
   gap: var(--gap);
 
-  /* ==============================
-  Layout: Responsive columns system 
-  ============================== */
+  /* Card layout */
   > .card {
-    /* Subtract the total row gaps, then divide the remaining space by the number of columns */
+    /* The width of each card is based on the number of columns and gap */
     flex: 1 1 calc((100% - (var(--columns) - 1) * var(--gap)) / var(--columns));
   }
 
@@ -168,10 +167,8 @@ main {
     --columns: 3;
   }
 
-  /* ======================================
-  Feature: Show second card first on mobile 
-  ======================================= */
-  > .card:nth-child(2) {
+  /* Show featured card first on mobile  */
+  > .card.featured {
     order: -1;
 
     @media (width >= 640px) {
@@ -310,29 +307,5 @@ main {
       font-size: 1.5rem;
       line-height: 1.6;
     }
-  }
-}
-
-/* ====================== */
-
-/* DEBUG */
-.debug {
-  main {
-    outline: 2px dotted blue;
-  }
-
-  section.pricing {
-    outline: 2px dashed red;
-  }
-
-  .intro,
-  .cards {
-    outline: 2px solid green;
-  }
-
-  .cards .card,
-  .intro .heading,
-  .intro .switches {
-    outline: 2px solid magenta;
   }
 }
