@@ -51,6 +51,7 @@ Match the provided reference layouts using HTML and CSS, with a focus on respons
 - Ordered the second card (Professional) first on mobile using the `order` property and media queries.
 - Used css custom properties for colors and other values
 - Used component classes and css nesting to scope styles to specific components and avoid unintended side effects.
+- Used buttons for switches, but in a real-app I would probably use a radio group
 
 &nbsp;
 
