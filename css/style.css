@@ -155,8 +155,9 @@ main {
 
   /* Card layout */
   > .card {
-    /* The width of each card is based on the number of columns and gap */
-    flex: 1 1 calc((100% - (var(--columns) - 1) * var(--gap)) / var(--columns));
+    /* flex-basis = (container width - row gaps) / columns
+    flex-grow = 1 so cards can grow to fill available space if alone */
+    flex: 1 1 calc((100% - var(--gap) * (var(--columns) - 1)) / var(--columns));
   }
 
   @media (width >= 640px) {
