@@ -36,14 +36,14 @@
           </div>
 
           <!-- Switches -->
-          <div class="switches">
-            <button type="button" class="switch active">
+          <div class="switches" aria-label="Billing period">
+            <button type="button" class="switch active" aria-pressed="true">
               <span>Monthly</span>
-              <i class="bi bi-toggle-on"></i>
+              <i class="bi bi-toggle-on" aria-hidden="true"></i>
             </button>
-            <button type="button" class="switch">
+            <button type="button" class="switch" aria-pressed="false">
               <span>Yearly</span>
-              <i class="bi bi-toggle-off"></i>
+              <i class="bi bi-toggle-off" aria-hidden="true"></i>
             </button>
           </div>
         </div>
@@ -71,16 +71,42 @@
               <span class="badge">15% Off</span>
             </div>
 
-            <button type="button" class="btn">Choose plan</button>
+            <button type="button" class="btn" aria-label="Choose Basic plan">
+              Choose plan
+            </button>
 
             <!-- Card Features -->
             <ul class="features">
-              <li><i class="bi bi-check-lg"></i> Unlimited Products</li>
-              <li><i class="bi bi-check-lg"></i> Custom Permissions</li>
-              <li><i class="bi bi-check-lg"></i> Custom Infrastructure</li>
-              <li><i class="bi bi-x-lg"></i> Custom Design &amp; Features</li>
-              <li><i class="bi bi-x-lg"></i> Unlimited Updates</li>
-              <li><i class="bi bi-x-lg"></i> Unlimited Infrastructure</li>
+              <li>
+                <span class="sr-only">Included:</span>
+                <i class="bi bi-check-lg" aria-hidden="true"></i>
+                Unlimited Products
+              </li>
+              <li>
+                <span class="sr-only">Included:</span>
+                <i class="bi bi-check-lg" aria-hidden="true"></i>
+                Custom Permissions
+              </li>
+              <li>
+                <span class="sr-only">Included:</span>
+                <i class="bi bi-check-lg" aria-hidden="true"></i>
+                Custom Infrastructure
+              </li>
+              <li>
+                <span class="sr-only">Not included:</span>
+                <i class="bi bi-x-lg" aria-hidden="true"></i>
+                Custom Design &amp; Features
+              </li>
+              <li>
+                <span class="sr-only">Not included:</span>
+                <i class="bi bi-x-lg" aria-hidden="true"></i>
+                Unlimited Updates
+              </li>
+              <li>
+                <span class="sr-only">Not included:</span>
+                <i class="bi bi-x-lg" aria-hidden="true"></i>
+                Unlimited Infrastructure
+              </li>
             </ul>
           </li>
 
@@ -105,18 +131,46 @@
               <span class="badge">15% Off</span>
             </div>
 
-            <button type="button" class="btn">Choose plan</button>
+            <button
+              type="button"
+              class="btn"
+              aria-label="Choose Professional plan"
+            >
+              Choose plan
+            </button>
 
             <!-- Card Features -->
             <ul class="features">
-              <li><i class="bi bi-check-lg"></i> Unlimited Products</li>
-              <li><i class="bi bi-check-lg"></i> Custom Permissions</li>
-              <li><i class="bi bi-check-lg"></i> Custom Infrastructure</li>
               <li>
-                <i class="bi bi-check-lg"></i> Custom Design &amp; Features
+                <span class="sr-only">Included:</span>
+                <i class="bi bi-check-lg" aria-hidden="true"></i>
+                Unlimited Products
               </li>
-              <li><i class="bi bi-x-lg"></i> Unlimited Updates</li>
-              <li><i class="bi bi-x-lg"></i> Unlimited Infrastructure</li>
+              <li>
+                <span class="sr-only">Included:</span>
+                <i class="bi bi-check-lg" aria-hidden="true"></i>
+                Custom Permissions
+              </li>
+              <li>
+                <span class="sr-only">Included:</span>
+                <i class="bi bi-check-lg" aria-hidden="true"></i>
+                Custom Infrastructure
+              </li>
+              <li>
+                <span class="sr-only">Included:</span>
+                <i class="bi bi-check-lg" aria-hidden="true"></i>
+                Custom Design &amp; Features
+              </li>
+              <li>
+                <span class="sr-only">Not included:</span>
+                <i class="bi bi-x-lg" aria-hidden="true"></i>
+                Unlimited Updates
+              </li>
+              <li>
+                <span class="sr-only">Not included:</span>
+                <i class="bi bi-x-lg" aria-hidden="true"></i>
+                Unlimited Infrastructure
+              </li>
             </ul>
           </li>
 
@@ -141,18 +195,42 @@
               <span class="badge">15% Off</span>
             </div>
 
-            <button type="button" class="btn">Choose plan</button>
+            <button type="button" class="btn" aria-label="Choose Ultimate plan">
+              Choose plan
+            </button>
 
             <!-- Card Features -->
             <ul class="features">
-              <li><i class="bi bi-check-lg"></i> Unlimited Products</li>
-              <li><i class="bi bi-check-lg"></i> Custom Permissions</li>
-              <li><i class="bi bi-check-lg"></i> Custom Infrastructure</li>
               <li>
-                <i class="bi bi-check-lg"></i> Custom Design &amp; Features
+                <span class="sr-only">Included:</span>
+                <i class="bi bi-check-lg" aria-hidden="true"></i>
+                Unlimited Products
               </li>
-              <li><i class="bi bi-check-lg"></i> Unlimited Updates</li>
-              <li><i class="bi bi-check-lg"></i> Unlimited Infrastructure</li>
+              <li>
+                <span class="sr-only">Included:</span>
+                <i class="bi bi-check-lg" aria-hidden="true"></i>
+                Custom Permissions
+              </li>
+              <li>
+                <span class="sr-only">Included:</span>
+                <i class="bi bi-check-lg" aria-hidden="true"></i>
+                Custom Infrastructure
+              </li>
+              <li>
+                <span class="sr-only">Included:</span>
+                <i class="bi bi-check-lg" aria-hidden="true"></i>
+                Custom Design &amp; Features
+              </li>
+              <li>
+                <span class="sr-only">Included:</span>
+                <i class="bi bi-check-lg" aria-hidden="true"></i>
+                Unlimited Updates
+              </li>
+              <li>
+                <span class="sr-only">Included:</span>
+                <i class="bi bi-check-lg" aria-hidden="true"></i>
+                Unlimited Infrastructure
+              </li>
             </ul>
           </li>
         </ul>
