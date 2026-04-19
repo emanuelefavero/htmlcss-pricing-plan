@@ -103,7 +103,7 @@ main {
     display: flex;
     gap: 0.875rem;
 
-    /* Reset alignment on >= tablet/desktop */
+    /* Reset centering on >= tablet/desktop */
     @media (width >= 640px) {
       align-self: auto;
     }
@@ -154,9 +154,9 @@ main {
     --columns: 3;
   }
 
-  /* ============================================= 
-  Feature: Highlight "Professional" card on mobile 
-  ============================================= */
+  /* ======================================
+  Feature: Show second card first on mobile 
+  ======================================= */
   > .card:nth-child(2) {
     order: -1;
 
@@ -280,6 +280,13 @@ main {
   gap: 0.25rem 2rem;
   font-size: 0.875rem;
 
+  /* 
+  Arrange in two columns when card container has enough width
+  */
+  @container (min-width: 440px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   li {
     display: flex;
     align-items: center;
@@ -289,15 +296,6 @@ main {
       font-size: 1.5rem;
       line-height: 1.6;
     }
-  }
-
-  /* 
-  Arrange in two columns when card container has enough width
-  NOTE: Remember to set `container-type: inline-size;` on the card element
-  @see https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/container-type 
-  */
-  @container (min-width: 440px) {
-    grid-template-columns: repeat(2, 1fr);
   }
 }
 
